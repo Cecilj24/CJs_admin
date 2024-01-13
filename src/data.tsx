@@ -224,7 +224,7 @@ export const chartBoxRevenue = {
 export const chartBoxConversion = {
     color: "gold",
     icon: "/conversionIcon.svg",
-    title: "Total Ratio",
+    title: "Profits Earned",
     number: "2.6",
     dataKey: "ratio",
     percentage: 12,
@@ -236,5 +236,20 @@ export const chartBoxConversion = {
         { name: "Thu", ratio: 400 },
         { name: "Fri", ratio: 500 },
         { name: "Sat", ratio: 450 },
+    ],
+};
+
+export const chartBoxVisit = {
+    color: "teal",
+    title: "Total Visit",
+    dataKey: "visit",
+    chartData: [
+        { name: "Sun", visit: 4000 },
+        { name: "Mon", visit: 3000 },
+        { name: "Tue", visit: 2000 },
+        { name: "Wed", visit: 2800 },
+        { name: "Thu", visit: 1900 },
+        { name: "Fri", visit: 2400 },
+        { name: "Sat", visit: 3490 },
     ],
 };
