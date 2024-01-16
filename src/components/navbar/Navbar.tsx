@@ -1,7 +1,5 @@
 import "./navbar.scss"
-import { CiSearch, CiSettings } from "react-icons/ci"
-import { FaExpand } from "react-icons/fa";
-import { IoIosAddCircleOutline, IoMdNotifications } from "react-icons/io";
+    ;
 
 
 const Navbar = () => {
@@ -11,18 +9,19 @@ const Navbar = () => {
                 <span className="">CJ's Dashboard</span>
             </div>
             <div className="icons">
-                <div className="icon"><CiSearch size='2rem' /></div>
-                <div className="icon"><FaExpand size='2rem' /></div>
-                <div className="icon"><IoIosAddCircleOutline size='2rem' /></div>
+                <img src="/search.svg" alt="" />
+                <img src="/app.svg" alt="" />
+                <img src="/expand.svg" alt="" />
+
                 <div className="notification">
-                    <IoMdNotifications size='2rem' />
+                    <img src="/notifications.svg" alt="" />
                     <span className="span"> 1 </span>
                 </div>
                 <div className="user">
                     <img
                         src="/customer2.png" alt="" />
                 </div>
-                <div className="icon"><CiSettings size="2rem" /></div>
+                <img src="/settings.svg" alt="" />
             </div>
         </div>
     )

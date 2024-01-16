@@ -1,4 +1,5 @@
 @import "./variable.scss";
+@import "./responsive.scss";
 
 * {
     margin: 0;
@@ -7,16 +8,24 @@
 
 }
 
+body {
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 
 }
 
+
 .main {
     font-family: "Inter", sans-serif;
     background-color: $main-bg;
+    display: inline-block;
 }
+
+
 
 .container {
     display: flex;
@@ -27,6 +36,12 @@ a {
     padding: 5px 20px;
     border-right: 2px solid $soft-bg;
     color: $main-color;
+
+    @include lg {
+        width: max-content;
+    }
+
+
 }
 
 .contentContainer {
